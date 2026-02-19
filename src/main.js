@@ -11,19 +11,23 @@ root.innerHTML = `
   <div id="data">Info...</div>
 `;
 
-const loadTasks = async () => {
+const loadData = async () => {
   try {
     document.querySelector('#data').innerHTML = `load`;
     const taskList = await base44.entities.Task.list();
-    let taskHtml = 'Tasks:<br/>';
+    const noteList = await base44.entities.Note.list();
+    let taskHtml = 'Data:<hr/>';
     for (const task of taskList) {
-      taskHtml += `<li>${task.title || JSON.stringify(task)}</li>`;
+      taskHtml += `<li>task: ${task.title || JSON.stringify(task)}</li>`;
+    }
+    for (const note of noteList) {
+      taskHtml += `<li>note: ${note.message || JSON.stringify(note)}</li>`;
     }
     document.querySelector('#data').innerHTML = taskHtml;
   } catch (error) {
     document.querySelector('#data').innerHTML = `error`;
-    console.error('Error loading tasks:', error);
+    console.error('Error loading data:', error);
   }
 };
 
-loadTasks();
+loadData();
