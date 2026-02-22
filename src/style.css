@@ -7,20 +7,25 @@
   h1 { @apply text-3xl font-extrabold text-slate-800 mb-2 tracking-tight; }
   p { @apply text-slate-500 mb-8; }
   hr { @apply my-6 border-0 h-px bg-slate-200; }
-  
-  /* Basis-Style für alle Einträge */
-  .list-item {
-    @apply list-none mb-3 p-4 bg-white rounded-xl shadow-sm border border-slate-100 
-           hover:shadow-md transition-all duration-200 border-l-4;
-  }
 }
 
 @layer components {
-  /* Spezifische Farben */
+  /* Die Karte für jeden Eintrag */
+  .list-item {
+    @apply list-none mb-3 p-4 bg-white rounded-xl shadow-sm border border-slate-100 
+           hover:shadow-md transition-all duration-200 border-l-4 flex items-center;
+  }
+
+  /* Das Label (ehemals der span) */
+  .item-label {
+    @apply font-bold mr-3 text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-md;
+  }
+
+  /* Spezifische Designs für Tasks */
   .item-task { @apply border-l-blue-500; }
+  .label-task { @apply bg-blue-50 text-blue-600; }
+
+  /* Spezifische Designs für Notes */
   .item-note { @apply border-l-emerald-500; }
-  
-  /* Lade-Zustand */
-  .is-loading { @apply animate-pulse text-blue-600 font-bold uppercase tracking-widest p-4; }
-  .is-error { @apply text-red-500 bg-red-50 p-4 rounded-lg border border-red-100; }
+  .label-note { @apply bg-emerald-50 text-emerald-600; }
 }
