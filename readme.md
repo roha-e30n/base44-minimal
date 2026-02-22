@@ -7,6 +7,7 @@ base44/               # Backend
     └── task.jsonc    # Task entity
 
 src/                  # Frontend
+├── style.css         # main css
 └── main.js           # main app
 
 public/               # Static
