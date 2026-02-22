@@ -37,6 +37,6 @@ src/                                     # Frontend
 public/                                  # Static
 └── readme.txt                           # readme
 
-index.html                               # HTML
+index.html                               # main html
 vite.config.js                           # Build
 ```
