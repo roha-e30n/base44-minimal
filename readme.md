@@ -32,11 +32,13 @@ base44/                                  # Backend
 
 src/                                     # Frontend
 ├── style.css                            # main css
-└── main.js                              # main app
+├── main.js                              # index.html
+└── about.js                             # about.html
 
 public/                                  # Static
 └── readme.txt                           # readme
 
-index.html                               # main html
+index.html                               # index.html
+about.html                               # about.html
 vite.config.js                           # Build
 ```
