@@ -8,6 +8,7 @@ npm install
 npm install -g base44@latest             # install Base44 SDK
 npm install @base44/sdk --save           # install Base44 SDK
 npm install @tailwindcss/vite            # install Tailwind CSS
+npm install vite-plugin-handlebars --save-dev  # install Handlebars Templates 
 base44 login                             # https://app.base44.com/login/device
 base44 link                              # create
 ```
