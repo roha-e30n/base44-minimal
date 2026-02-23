@@ -53,3 +53,17 @@ index.html                               # index.html
 about.html                               # about.html
 vite.config.js                           # Build
 ```
+
+## Output
+
+```
+dist/index.html                   0.57 kB │ gzip:  0.35 kB
+dist/about.html                   0.57 kB │ gzip:  0.35 kB
+dist/en/index.html                0.80 kB │ gzip:  0.48 kB
+dist/de/index.html                0.81 kB │ gzip:  0.48 kB
+dist/assets/client-D7cw3iT_.css   9.55 kB │ gzip:  2.66 kB  Global CSS
+dist/assets/client--_wcQmiP.js   97.36 kB │ gzip: 33.50 kB  Global JS
+dist/assets/index-DRHHX4Mm.js     0.87 kB │ gzip:  0.46 kB  index.js
+dist/assets/about-Dag0Ko5z.js     0.21 kB │ gzip:  0.20 kB  about.js
+dist/assets/landing-W4Zg2qt_.js   0.21 kB │ gzip:  0.21 kB  landing.js
+```
