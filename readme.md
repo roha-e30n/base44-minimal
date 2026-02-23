@@ -30,7 +30,17 @@ base44/                                  # Backend
 └── entities/                            # Data schemas
     └── task.jsonc                       # Task entity
 
+de/                                      # Deutsch
+└── index.html                           # Template-Proxy /de/
+
+en/                                      # Englisch
+└── index.html                           # Template-Proxy /en/
+
 src/                                     # Frontend
+├── page-content/                        # page Content
+|   └── landing.js                       # Landing-Page Content
+├── page-template/                       # Page Template
+|   └── landing.html                     # Landing-Page Template
 ├── style.css                            # main css
 ├── main.js                              # index.html
 └── about.js                             # about.html
