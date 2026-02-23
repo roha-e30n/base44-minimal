@@ -59,6 +59,7 @@ vite.config.js                           # Build
 ```
 dist/index.html                   0.57 kB │ gzip:  0.35 kB
 dist/about.html                   0.57 kB │ gzip:  0.35 kB
+dist/readme.txt                   0.04 kB │ gzip:  0.04 kB  (public)
 dist/en/index.html                0.80 kB │ gzip:  0.48 kB
 dist/de/index.html                0.81 kB │ gzip:  0.48 kB
 dist/assets/client-D7cw3iT_.css   9.55 kB │ gzip:  2.66 kB  Global CSS
